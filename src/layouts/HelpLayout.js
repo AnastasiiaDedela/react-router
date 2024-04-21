@@ -8,8 +8,8 @@ export default function HelpLayout() {
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, sapiente?</p>
 
       <nav>
-        <NavLink to="faq">FAQ</NavLink>
-        <NavLink to="contact">Contacts</NavLink>
+        <NavLink to="faq">View the FAQ</NavLink>
+        <NavLink to="contact">Contact Us</NavLink>
       </nav>
 
       <Outlet />
