@@ -8,7 +8,8 @@ import Contacts from './pages/help/Contacts'
 import NotFound from './pages/NotFound'
 import CareersLayout from './layouts/CareersLayout'
 import Careers, { careersLoader } from './pages/careers/Careers'
-import CareerDetails, { careerDetailaLoader, careerDetailsLoader } from './pages/careers/CareerDetails'
+import CareerDetails, { careerDetailsLoader } from './pages/careers/CareerDetails'
+import CareerError from './pages/careers/CareerError'
 
 // const router = createBrowserRouter(
 //   createRoutesFromElements(
@@ -49,6 +50,7 @@ const router = createBrowserRouter([
       {
         path: 'careers',
         element: <CareersLayout />,
+        errorElement: <CareerError />,
         children: [
           {
             path: '',

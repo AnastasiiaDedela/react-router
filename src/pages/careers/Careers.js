@@ -19,6 +19,9 @@ function Careers() {
 export const careersLoader = async () => {
   const res = await fetch('http://localhost:4000/careers')
   const data = res.json()
+  if (!res.ok) {
+    throw Error('Couldn`t fetch this career')
+  }
   return data
 }
 
