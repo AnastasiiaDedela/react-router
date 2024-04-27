@@ -2,7 +2,6 @@ import { Link, useLoaderData } from 'react-router-dom'
 
 function Careers() {
   const careers = useLoaderData()
-  console.log(careers)
   return (
     <div className="careers">
       {careers.map((career) => (

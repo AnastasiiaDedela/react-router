@@ -3,7 +3,7 @@ import { useLoaderData } from 'react-router-dom'
 
 export default function CareerDetails() {
   const career = useLoaderData()
-  console.log('career: ', career)
+
   return (
     <div className="career-details">
       <h2>Career detail for {career.title}</h2>
